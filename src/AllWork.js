@@ -10,7 +10,10 @@ class AllWork extends Component {
     render() {
         return (
             <div className="Work">
+                <h1 className="text-center my-4">Projects:</h1>
                 <Row>
+
+
                 {
                     projectsData.map((item, i) => {
                         return (
