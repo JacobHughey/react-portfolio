@@ -19,6 +19,7 @@ class App extends Component {
     }
     this.handleNavToggle = this.handleNavToggle.bind(this)
     this.handleContactToggle = this.handleContactToggle.bind(this)
+    this.goHome = this.goHome.bind(this)
   }
   handleNavToggle() {
     this.setState({
@@ -30,13 +31,20 @@ class App extends Component {
       isContactOpen: !this.state.isContactOpen
     })
   }
+    goHome() {
+      this.setState({
+        isNavOpen: false,
+        isContactOpen: false
+      })
+    }
+  
 
   render() {
     return (
       <div className="App">
         <Container fluid>
         <FontAwesomeIcon icon={faBars} size="2x" className="my-4" onClick={this.handleNavToggle}></FontAwesomeIcon>
-          { this.state.isNavOpen === true ? <Sidenav navToggle={this.handleNavToggle} contactToggle={this.handleContactToggle}/> : null }
+          { this.state.isNavOpen === true ? <Sidenav navToggle={this.handleNavToggle} goHome={this.goHome} contactToggle={this.handleContactToggle}/> : null }
           { this.state.isContactOpen === true ? <ContactModal parentMethod={this.handleContactToggle}/> : null }
           { this.state.isContactOpen === false ? <Jumbo parentMethod={this.handleContactToggle} /> : null }
           { this.state.isContactOpen === false ? <Cards /> : null }

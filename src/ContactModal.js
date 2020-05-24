@@ -6,11 +6,11 @@ import Form from 'react-bootstrap/Form'
 class ContactModal extends Component {
     render() {
         return (
-            <div className="ContactModal">
+            <div className="ContactModal mb-4">
                 <Modal.Dialog>
                     <Modal.Header>
                         <Modal.Title>Contact</Modal.Title>
-                        <a href="#" className="closebtn" onClick={this.props.parentMethod}>&times;</a>
+                        <a href="#" className="closebtn" onClick={this.props.parentMethod} style={{textDecoration: "none"}}>&times;</a>
                     </Modal.Header>
 
                     <Modal.Body>

@@ -22,9 +22,24 @@ class Social extends Component {
                         className="mx-4"/>
                     </a>
 
-                    <FontAwesomeIcon icon={faTwitter} size="2x" color="white" className="mx-4" />
-                    <FontAwesomeIcon icon={faLinkedin} size="2x" color="white"  className="mx-4" />
-                    <FontAwesomeIcon icon={faFacebookSquare} size="2x" color="white"  className="mx-4" />
+                    <a href="https://twitter.com/">
+                        <FontAwesomeIcon icon={faTwitter}
+                        size="2x"
+                        color="white"
+                        className="mx-4" />
+                    </a>
+                    <a href="https://linkedin.com/">
+                        <FontAwesomeIcon icon={faLinkedin}
+                        size="2x"
+                        color="white"
+                        className="mx-4" />
+                    </a>
+                    <a href="https://facebook.com/">
+                        <FontAwesomeIcon icon={faFacebookSquare}
+                        size="2x"
+                        color="white" 
+                        className="mx-4" />
+                    </a>
 
             </div>
         );
