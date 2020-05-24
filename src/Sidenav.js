@@ -13,7 +13,7 @@ class Sidenav extends Component {
               <li><a href="#" className="closebtn" onClick={this.props.navToggle}>&times;</a></li>
               <li><a href="#" className="my-4 mr-4" onClick={this.props.goHome}>Home</a></li>
               <li><a href="#" className="my-4 mr-4" onClick={this.props.contactToggle}>Contact</a></li>
-              <li><a href="#" className="my-4 mr-4">Work</a></li>
+              <li><a href="#" className="my-4 mr-4" onClick={this.props.toggleWork}>Work</a></li>
           </ul>
       </div>
     );
