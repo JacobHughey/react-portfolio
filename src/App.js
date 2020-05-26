@@ -33,7 +33,8 @@ class App extends Component {
   handleContactToggle() {
     this.setState({
       isContactOpen: !this.state.isContactOpen,
-      isWorkOpen: false
+      isWorkOpen: false,
+      isNavOpen: false
     })
   }
   goHome() {
@@ -46,7 +47,8 @@ class App extends Component {
   toggleWork() {
     this.setState({
       isWorkOpen: !this.state.isWorkOpen,
-      isContactOpen: false
+      isContactOpen: false,
+      isNavOpen: false
     })
   }
 

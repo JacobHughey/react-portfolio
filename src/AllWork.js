@@ -3,6 +3,7 @@ import Work from './Work.js'
 import projectsData from './projectsData.js'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
 
 
 
@@ -11,27 +12,29 @@ class AllWork extends Component {
         return (
             <div className="Work">
                 <h1 className="text-center my-4">Projects:</h1>
-                <Row>
+                <Container>
+                    <Row>
 
 
-                {
-                    projectsData.map((item, i) => {
-                        return (
+                        {
+                            projectsData.map((item, i) => {
+                                return (
 
-                            <Col sm={6}>
-                                <Work
-                                    img={item.img}
-                                    title={item.title}
-                                    text={item.text}
-                                    description={item.description}
-                                    link={item.link}
-                                />
-                            </Col>
+                                    <Col sm={6}>
+                                        <Work
+                                            img={item.img}
+                                            title={item.title}
+                                            text={item.text}
+                                            description={item.description}
+                                            link={item.link}
+                                        />
+                                    </Col>
 
-                        )
-                    })
-                }
-                </Row>
+                                )
+                            })
+                        }
+                    </Row>
+                </Container>
             </div>
         );
     }
