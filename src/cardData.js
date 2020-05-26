@@ -15,7 +15,7 @@ const cardData = [
         id: 1,
         img: plans,
         title: "Front End Web Development",
-        text: "Here are some languages and frameworks I'm familar with: HTML 5, CSS 3, JavaScript ES6, React, Redux, Bootstrap, jQuery, JSON"
+        text: "Here are some languages and frameworks I use: HTML, CSS, JavaScript, React, Redux, Bootstrap, jQuery, JSON, XML, AJAX, Github, Bash, NPM"
     },
     {
         id: 2,

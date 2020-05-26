@@ -9,6 +9,7 @@ import Cards from './Cards.js'
 import Footer from './Footer.js'
 import ContactModal from './ContactModal.js'
 import AllWork from './AllWork.js'
+// import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
 
 class App extends Component {
 
@@ -31,7 +32,8 @@ class App extends Component {
   }
   handleContactToggle() {
     this.setState({
-      isContactOpen: !this.state.isContactOpen
+      isContactOpen: !this.state.isContactOpen,
+      isWorkOpen: false
     })
   }
   goHome() {
@@ -43,7 +45,8 @@ class App extends Component {
   }
   toggleWork() {
     this.setState({
-      isWorkOpen: !this.state.isWorkOpen
+      isWorkOpen: !this.state.isWorkOpen,
+      isContactOpen: false
     })
   }
 
