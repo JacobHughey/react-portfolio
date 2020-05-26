@@ -1,8 +1,0 @@
-.jumboImg {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/pro1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: 1.2em;
-    height: 100%;
-    opacity: 0.8
-}
